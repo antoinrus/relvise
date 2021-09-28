@@ -146,6 +146,17 @@ body {
 .main-block__buttons {
 }
 .main-block__button {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 28px;
+	/* identical to box height, or 200% */
+
+	text-align: center;
+	letter-spacing: 0.2px;
+
+	/* secondary-color-1 */
+
+	color: #0d5c63;
 }
 .main-block__image {
 	position: absolute;
