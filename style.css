@@ -899,12 +899,25 @@ body {
 	background-color: #fff;
 	padding: 50px 40px;
 	text-align: center;
+	transition: all 0.3s ease 0s;
 }
+.getintouch__item:hover {
+	background-color: #252b42;
+	padding: 80px 40px;
+	color: #fff;
+}
+
 .getintouch__item *:not(:last-child) {
 	margin: 0px 0px 15px 0px;
 }
 .getintouch__icon {
-	max-height: 72px;
+	min-height: 72px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.getintouch__icon img {
+	max-height: 100%;
 }
 .getintouch__emails {
 	font-weight: 600;
