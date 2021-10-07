@@ -886,6 +886,7 @@ body {
 	padding: 80px 0px 148px 0px;
 }
 .getintouch__container {
+	padding: 0px 45px;
 }
 .getintouch__header-block {
 	margin: 0px 0px 80px 0px;
@@ -924,7 +925,7 @@ body {
 	background-color: #252b42;
 }
 
-.getintouch__item *:not(:last-child) {
+.getintouch__item > *:not(:last-child) {
 	margin: 0px 0px 15px 0px;
 }
 .getintouch__icon {
@@ -933,8 +934,11 @@ body {
 	align-items: flex-end;
 	justify-content: center;
 }
-.getintouch__icon img {
+.getintouch__icon svg {
 	max-height: 100%;
+}
+.getintouch__item:hover .getintouch__icon path {
+	fill: #fff;
 }
 .getintouch__emails {
 	font-weight: 600;
@@ -942,6 +946,7 @@ body {
 	letter-spacing: 0.2px;
 }
 .getintouch__email {
+	display: block;
 	color: inherit;
 }
 .getintouch__email:hover {
@@ -954,6 +959,7 @@ body {
 	letter-spacing: 0.1px;
 }
 .getintouch__button {
+	display: inline-block;
 	font-weight: 600;
 	line-height: 171%;
 	text-align: center;
@@ -963,5 +969,34 @@ body {
 	padding: 10px 20px;
 	border-radius: 5px;
 	min-height: 44px;
+}
+.getintouch__item:hover .getintouch__button {
+	color: #fff;
+	border-color: #fff;
+}
+@media (max-width: 992px) {
+	.getintouch {
+		padding: 60px 0px 80px 0px;
+	}
+	.getintouch__header-block {
+		margin: 0px 0px 60px 0px;
+	}
+	.getintouch__container {
+		padding: 0;
+	}
+	.getintouch__body {
+		flex-direction: column;
+	}
+	.getintouch__item {
+		width: 100%;
+	}
+}
+@media (max-width: 767px) {
+	.getintouch {
+		padding: 40px 0px 60px 0px;
+	}
+	.getintouch__header-block {
+		margin: 0px 0px 40px 0px;
+	}
 }
 /* ---------------------------------------------------------------------------- */
